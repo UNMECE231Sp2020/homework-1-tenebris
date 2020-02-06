@@ -46,6 +46,7 @@ Complex complex_div(Complex c1, Complex c2) {
 	Complex c = complex_mult(c1, complex_conj(c2));
 	if(denom == 0) {
 		printf("no\n");
+		return c1;
 	}
 	c.real /= denom;
 	c.imag /= denom;
