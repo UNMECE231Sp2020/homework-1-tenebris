@@ -52,9 +52,8 @@ Complex complex_div(Complex c1, Complex c2) {
 	return c;
 }
 
-void funct1(Complex (*funct)(Complex, Complex), Complex c1, Complex c2) {
+void print4(Complex (*funct)(Complex, Complex), Complex c1, Complex c2)
 	print_complex(funct(c1, c2));
-}
-void funct2(double (*funct)(Complex), Complex c) {
+
+void print2(double (*funct)(Complex), Complex c)
 	printf("%f\n", funct(c));
-}
