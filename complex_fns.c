@@ -59,5 +59,5 @@ void funct2(double (*funct)(Complex), Complex c) {
 	printf("%f\n", funct(c));
 }
 
-Complex (*hand1[4])(Complex c1, Complex c2) = {complex_add, complex_sub, complex_mult, complex_div};
-double (*hand2[2])(Complex c) = {magnitude, phase};
+Complex (*hand1[])(Complex c1, Complex c2);
+double (*hand2[])(Complex c);
