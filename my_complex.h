@@ -19,9 +19,5 @@ Complex complex_conj(Complex c);
 double magnitude(Complex c);
 double phase(Complex c);
 
-void funct1(Complex (*funct)(Complex, Complex), Complex c1, Complex c2) {
-	print_complex(funct(c1, c2));
-}
-void funct2(double (*funct)(Complex), Complex c) {
-	printf("%d\n", funct(c));
-}
+void funct1(Complex (*funct)(Complex, Complex), Complex c1, Complex c2);
+void funct2(double (*funct)(Complex), Complex c);
