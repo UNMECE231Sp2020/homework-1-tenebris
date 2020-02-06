@@ -12,7 +12,7 @@ int main() {
 		funct1(hand1[i], a, b);
 	}
 
-	for(int i = 0; i < 3; i++) {
+	for(int i = 0; i < 2; i++) {
 		funct2(hand2[i], a);
 	}
 
