@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-struct _ccomplex {
-	double real;
-	double imag;
-};
-
-typedef struct _ccomplex Complex;
+#include "my_complex.h"
 
 double magnitude(Complex c) {
 	return sqrt((c.real*c.real) + (c.imag*c.imag));
