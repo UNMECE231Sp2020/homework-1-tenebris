@@ -9,10 +9,10 @@ int main() {
 	double (*hand2[2])(Complex c) = {magnitude, phase};
 
 	for(int i = 0; i < 4; i++)
-		print4(hand1[i], a, b);
+		prnt4(hand1[i], a, b);
 
 	for(int i = 0; i < 2; i++)
-		print2(hand2[i], a);
+		prnt2(hand2[i], a);
 
 	return 0;
 }
