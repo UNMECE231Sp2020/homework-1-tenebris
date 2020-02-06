@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-#include "my_complex.h"
+struct _ccomplex {
+	double real;
+	double imag;
+};
+
+typedef struct _ccomplex Complex;
 
 double magnitude(Complex c) {
 	return sqrt((c.real*c.real) + (c.imag*c.imag));
@@ -59,5 +64,5 @@ void funct2(double (*funct)(Complex), Complex c) {
 	printf("%f\n", funct(c));
 }
 
-Complex (*hand1[4]) (Complex c1, Complex c2);
-double (*hand2[2]) (Complex c);
+Complex (*hand1[4])(Complex c1, Complex c2) = {complex_add, complex_sub, complex_mult, complex_div};
+double (*hand2[2])(Complex c) = {magnitude, phase};
