@@ -1,4 +1,4 @@
-# Homework1
+# Sonny's Homework1
 Second homework of ECE 231: Intermediate Programming. Assigned 1/31/2020. Due 2/7/2020, 11:59 pm.
 ## Context
 You are to update a library that is a simple complex library. You are going to create two functions, make an already existing function more robust, create an array of function pointers, and go through the array of function pointers, calling each function.
