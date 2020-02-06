@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "my_complex.h"
+
 
 double magnitude(Complex c) {
 	return sqrt((c.real*c.real) + (c.imag*c.imag));
@@ -44,7 +44,13 @@ Complex complex_mult(Complex c1, Complex c2) {
 Complex complex_div(Complex c1, Complex c2) {
 	double denom = magnitude(c2)*magnitude(c2);
 	Complex c = complex_mult(c1, complex_conj(c2));
+	if(denom == 0) {
+		printf("no\n");
+	}
 	c.real /= denom;
 	c.imag /= denom;
 	return c;
 }
+
+Complex (*hand1[4]) (Complex c1, Complex c2);
+double (*hand2[2]) (Complex c);
