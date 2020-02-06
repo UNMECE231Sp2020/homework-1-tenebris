@@ -14,7 +14,6 @@ int main() {
 
 	for(int i = 0; i < 3; i++) {
 		funct2(hand2[i], a);
-		funct2(hand2[i], b);
 	}
 
 	return 0;
