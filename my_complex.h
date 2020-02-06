@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-struct _complex {
+typedef struct _complex {
 	double real;
 	double imag;
-};
-
-typedef struct _complex Complex;
+} Complex;
 
 void print_complex(Complex c);
 
